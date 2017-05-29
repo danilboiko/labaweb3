@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><TITLE>Tree Example</TITLE>
+<style type="text/css">
+@import "tree.css";
+</style>
+<script src="/misc/jquery.js"></script>
+<script src="tree.js"></script>
+<script>
+onload = function() { tree("tree", "data.php") }
+</script>
+</head>
+<body>
+
+Our tree:
+<ul class="Container" id="tree">
+  <li class="Node IsRoot IsLast ExpandClosed">
+    <div class="Expand"></div>
+    <div class="Content">Folder</div>
+    <ul class="Container">
+    </ul>
+  </li>
+</ul>
+
+
+
+</body>
+</html>
